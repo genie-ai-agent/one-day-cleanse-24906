@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ONE DAY CLEANSE // discipline, no BS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="top-row">
+    <span class="tag">// system.status</span>
+    <span class="clock" id="clock">--:--:--</span>
+  </div>
+  <h1 class="title">ONE&nbsp;DAY&nbsp;CLEANSE</h1>
+  <p class="subtitle">discipline &middot; clean fuel &middot; no BS &middot; <span class="accent">today only</span></p>
+
+  <div class="countdown-block">
+    <div class="cd-label">TIME UNTIL 8:00PM CUTOFF</div>
+    <div class="cd-value" id="countdown">--:--:--</div>
+    <div class="cd-bar"><div class="cd-bar-fill" id="cd-bar-fill"></div></div>
+  </div>
+
+  <div class="cta-row">
+    <button id="join-btn" class="join">[ JOIN THE CLEANSE ]</button>
+    <span class="crew" id="crew">crew locked in: <b id="crew-count">0</b></span>
+  </div>
+</header>
+
+<main>
+  <section class="boundaries" id="boundaries">
+    <h2 class="h2"><span class="hash">##</span> BOUNDARIES</h2>
+    <ul class="rules" id="rules-list"></ul>
+  </section>
+
+  <section class="grid-2">
+    <div class="panel ok">
+      <div class="panel-head">
+        <span class="dot ok-dot"></span>
+        <h3>ALLOWED &middot; DRINK</h3>
+      </div>
+      <ul class="chips" id="drink-ok"></ul>
+      <p class="note">hungry? drink tea.</p>
+    </div>
+    <div class="panel no">
+      <div class="panel-head">
+        <span class="dot no-dot"></span>
+        <h3>NOT ALLOWED &middot; DRINK</h3>
+      </div>
+      <ul class="chips" id="drink-no"></ul>
+    </div>
+  </section>
+
+  <section class="meals">
+    <h2 class="h2"><span class="hash">##</span> THE DAY, IN THREE MEALS</h2>
+    <div class="meal-grid" id="meal-grid"></div>
+  </section>
+
+  <section class="snack">
+    <h2 class="h2"><span class="hash">##</span> ONE HEALTHY SNACK</h2>
+    <div class="snack-card" id="snack-card"></div>
+    <p class="note">one. not three. still under the cap.</p>
+  </section>
+
+  <section class="crew-section">
+    <h2 class="h2"><span class="hash">##</span> THE CREW</h2>
+    <p class="lede">tag them in. lock the day. no half-in.</p>
+    <ul class="crew-list" id="crew-list"></ul>
+    <p class="mantra">&gt; if you&rsquo;re hungry, drink tea.</p>
+  </section>
+</main>
+
+<footer>
+  <span>[ end&nbsp;of&nbsp;protocol ]</span>
+  <span>one day. clean. done.</span>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
