@@ -1,23 +1,23 @@
 // ONE DAY CLEANSE — protocol data
 window.CLEANSE = {
   rules: [
-    { text: "Only <b>water or tea</b>. No Celsius. No juice. No soda. No booze." },
-    { text: "If you\u2019re hungry, <b>drink tea</b>. Not a snack. Tea." },
+    { text: "Only <b>water, tea, or black coffee</b>. No Celsius. No juice. No soda. No booze." },
+    { text: "If you\u2019re hungry, <b>drink tea or black coffee</b>. Not a snack." },
     { text: "Lunch is <b>yogurt</b>. Plain or Greek. Nothing sweetened to death." },
     { text: "Dinner is <b>seafood only</b>: pollock, shrimp, or salmon sushi. <b>&le; 500 kcal</b>." },
     { text: "One healthy <b>snack</b> allowed. One. Not three." },
     { text: "<b>Hard cutoff: no eating past 8:00 PM.</b> Kitchen closes. Period." },
     { text: "One day. You commit at sunrise, you finish at sundown." }
   ],
-  drinkOk: ["water", "still water", "sparkling water", "green tea", "black tea", "herbal tea", "matcha (unsweetened)"],
-  drinkNo: ["Celsius", "energy drinks", "coffee w/ sugar", "juice", "soda", "alcohol", "protein shakes", "smoothies"],
+  drinkOk: ["water", "still water", "sparkling water", "green tea", "black tea", "herbal tea", "matcha (unsweetened)", "black coffee", "espresso", "americano"],
+  drinkNo: ["Celsius", "energy drinks", "coffee w/ sugar", "coffee w/ milk", "lattes", "juice", "soda", "alcohol", "protein shakes", "smoothies"],
   meals: [
     {
       when: "MORNING",
-      title: "Tea + Water",
-      cap: "open with hot water and tea. that\u2019s it.",
+      title: "Coffee, Tea + Water",
+      cap: "black coffee, tea, water. no milk, no sugar.",
       kcal: "~0 kcal",
-      items: ["1 cup green or black tea", "large glass of water", "more tea if hungry"]
+      items: ["1 black coffee or espresso", "1 cup green or black tea", "large glass of water"]
     },
     {
       when: "LUNCH",
